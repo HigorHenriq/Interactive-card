@@ -1,0 +1,32 @@
+@media screen and (max-width: 1090px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0 auto;
+		width: inherit;
+	}
+
+	.divisor-background {
+		display: none;
+	}
+
+	.card-front {
+		top: 5%;
+	}
+
+	.card-back {
+		top: 60%;
+	}
+
+	form {
+		width: 100%;
+		padding: 10px;
+		/* margin-left: 15%;
+		margin-right: 20%; */
+		margin: 0 16%;
+	}
+
+	.date-cvc {
+		gap: 20px;
+	}
+}
