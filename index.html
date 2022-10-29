@@ -5,48 +5,105 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mobileStyle.css" />
 		<title>Interactive Card</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="divisor-background"></div>
 
-			<div class="card-front">
-				<section class="wrapper-logo">
-					<div class="img-logo"></div>
-					<div class="circle-style"></div>
-				</section>
-
-				<div class="wrapper-infos-card">
-					<section class="digits">
-						<p class="first-column-digits">0000</p>
-						<p class="second-column-digits">0000</p>
-						<p class="third-column-digits">0000</p>
-						<p class="four-column-digits">0000</p>
+			<section class="container-card">
+				<div class="card-front">
+					<section class="wrapper-logo">
+						<div class="img-logo"></div>
+						<div class="circle-style"></div>
 					</section>
 
-					<footer class="footer-front-card">
-						<section class="client-name">
-							<p>Client Name Here!</p>
+					<div class="wrapper-infos-card">
+						<section class="digits">
+							<p class="first-column-digits">0000</p>
+							<p class="second-column-digits">0000</p>
+							<p class="third-column-digits">0000</p>
+							<p class="four-column-digits">0000</p>
 						</section>
 
-						<section class="exp-card">
-							<p>00/00</p>
-						</section>
-					</footer>
+						<footer class="footer-front-card">
+							<section class="client-name">
+								<p>Client Name Here!</p>
+							</section>
+
+							<section class="exp-card">
+								<p>00/00</p>
+							</section>
+						</footer>
+					</div>
 				</div>
-			</div>
 
-			<div class="card-back"></div>
+				<div class="card-back">
+					<section class="stripe"></section>
+					<section class="wrapper-cvc">
+						<p class="number-cvc">000</p>
+					</section>
+					<section class="description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Eum quia optio quidem mollitia nostrum magni
+							fugit soluta reprehenderit deserunt
+						</p>
+					</section>
+				</div>
+			</section>
 
 			<form>
-				<input type="text" class="holder-name" name="holder-name" />
-				<input type="text" class="card-number" name="card-number" />
+				<label>
+					CARDHOLDER NAME
+					<input
+						type="text"
+						class="holder-name"
+						name="holder-name"
+						label="teste"
+						placeholder="e.g. Peter parker"
+					/>
+				</label>
+				<label>
+					CARD NUMBER
+					<input
+						type="text"
+						class="card-number"
+						name="card-number"
+						placeholder="e.g.c 1234 5678 9123 0000"
+					/>
+				</label>
 
-				<div>
-					<input type="text" class="mouth-card" name="mouth-card" />
-					<input type="text" class="mouth-card" name="mouth-card" />
-				</div>
+				<section class="date-cvc">
+					<label>
+						EX. DATE (MM/YY)
+						<section class="inputs-dates">
+							<input
+								type="number"
+								class="mouth-card"
+								name="mouth-card"
+								placeholder="MM"
+							/>
+							<input
+								type="number"
+								class="year-card"
+								name="year-card"
+								placeholder="YY"
+							/>
+						</section>
+					</label>
+
+					<label>
+						CVC
+						<input
+							type="text"
+							class="mouth-card"
+							name="mouth-card"
+							placeholder="e.g. 123"
+						/>
+					</label>
+				</section>
 			</form>
 		</div>
 		<script src="script.js"></script>
