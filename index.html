@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="mobileStyle.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/mobile.css" />
 		<title>Interactive Card</title>
 	</head>
 	<body>
@@ -21,15 +21,35 @@
 
 					<div class="wrapper-infos-card">
 						<section class="digits">
-							<p class="first-column-digits">0000</p>
-							<p class="second-column-digits">0000</p>
-							<p class="third-column-digits">0000</p>
-							<p class="four-column-digits">0000</p>
+							<p
+								class="first-column-digits"
+								id="first-column-digits"
+							>
+								0000
+							</p>
+							<p
+								class="second-column-digits"
+								id="second-column-digits"
+							>
+								0000
+							</p>
+							<p
+								class="third-column-digits"
+								id="third-column-digits"
+							>
+								0000
+							</p>
+							<p
+								class="four-column-digits"
+								id="four-column-digits"
+							>
+								0000
+							</p>
 						</section>
 
 						<footer class="footer-front-card">
 							<section class="client-name">
-								<p>Client Name Here!</p>
+								<p id="cardClientName">Client Name Here!</p>
 							</section>
 
 							<section class="exp-card">
@@ -62,6 +82,7 @@
 						class="holder-name"
 						name="holder-name"
 						label="teste"
+						onkeyup="changeCardName(this.value)"
 						placeholder="e.g. Peter parker"
 					/>
 				</label>
@@ -106,6 +127,6 @@
 				</section>
 			</form>
 		</div>
-		<script src="script.js"></script>
+		<script src="./main.js"></script>
 	</body>
 </html>
