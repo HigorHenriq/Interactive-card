@@ -20,36 +20,16 @@
 					</section>
 
 					<div class="wrapper-infos-card">
-						<section class="digits">
-							<p
-								class="first-column-digits"
-								id="first-column-digits"
-							>
-								0000
-							</p>
-							<p
-								class="second-column-digits"
-								id="second-column-digits"
-							>
-								0000
-							</p>
-							<p
-								class="third-column-digits"
-								id="third-column-digits"
-							>
-								0000
-							</p>
-							<p
-								class="four-column-digits"
-								id="four-column-digits"
-							>
-								0000
-							</p>
+						<section class="digits" id="all-cards-digits">
+							<p id="first-column-digits">0000</p>
+							<p id="second-column-digits">0000</p>
+							<p id="third-column-digits">0000</p>
+							<p id="four-column-digits">0000</p>
 						</section>
 
 						<footer class="footer-front-card">
 							<section class="client-name">
-								<p id="cardClientName">Client Name Here!</p>
+								<p id="card-client-name">Client Name Here!</p>
 							</section>
 
 							<section class="exp-card">
@@ -82,8 +62,8 @@
 						class="holder-name"
 						name="holder-name"
 						label="teste"
-						onkeyup="changeCardName(this.value)"
 						placeholder="e.g. Peter parker"
+						onkeyup="changeCardName(this.value)"
 					/>
 				</label>
 				<label>
@@ -91,8 +71,10 @@
 					<input
 						type="text"
 						class="card-number"
-						name="card-number"
+						name="input-card-number"
 						placeholder="e.g.c 1234 5678 9123 0000"
+						maxlength="19"
+						onkeyup="changeCardDigits(this.value)"
 					/>
 				</label>
 
