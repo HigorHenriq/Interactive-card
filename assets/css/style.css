@@ -195,3 +195,33 @@ input {
 	display: flex;
 	flex-direction: row;
 }
+
+.btn-enviar {
+	color: white;
+	background: linear-gradient(
+		120deg,
+		rgba(126, 0, 245, 0.76) 0%,
+		rgba(108, 9, 121, 0.966) 35%,
+		rgba(81, 101, 150, 0.445) 55%,
+		rgba(55, 171, 186, 0.658) 75%,
+		rgba(0, 213, 255, 0.89) 100%
+	);
+	padding: 19px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	transition: ease-out 1s;
+}
+
+.btn-enviar:hover {
+	background: linear-gradient(
+		120deg,
+		rgba(0, 213, 255, 0.89) 100%,
+		rgba(55, 171, 186, 0.658) 75%,
+		rgba(81, 101, 150, 0.445) 55%,
+		rgba(126, 0, 245, 0.76) 0%,
+		rgba(108, 9, 121, 0.966) 35%
+	);
+}

@@ -6,7 +6,7 @@ const resetCardName = () => {
 	cardClientName.innerHTML = "CLIENT NAME HERE!";
 };
 
-export const changeCardName = (event) => {
+const changeCardName = (event) => {
 	if (event == "") {
 		return resetCardName();
 	}
