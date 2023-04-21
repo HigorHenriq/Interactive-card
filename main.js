@@ -7,7 +7,7 @@ const cardClientDigits = document.getElementById("all-cards-digits");
 const cardClientDateMM = document.getElementById("card-mm");
 const cardClientDateYY = document.getElementById("card-yy");
 
-// const cardClientCVC = document.getElementById("cardClientName");
+const cardClientCVC = document.getElementById("card-cvc");
 
 const resetCardName = () => {
 	cardClientName.innerHTML = "CLIENT NAME HERE!";
@@ -65,6 +65,10 @@ const changeCardMM = (value) => {
 
 const changeCardYY = (value) => {
 	cardClientDateYY.innerHTML = value;
+};
+
+const changeCardCvc = (value) => {
+	cardClientCVC.innerHTML = value;
 };
 
 /**

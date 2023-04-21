@@ -44,7 +44,7 @@
 				<div class="card-back">
 					<section class="stripe"></section>
 					<section class="wrapper-cvc">
-						<p class="number-cvc">000</p>
+						<p class="number-cvc" id="card-cvc">000</p>
 					</section>
 					<section class="description">
 						<p>
@@ -89,18 +89,18 @@
 								class="mouth-card"
 								name="mouth-card"
 								placeholder="MM"
-								oninput="changeCardMM(this.value)"
 								maxlength="2"
 								max="12"
 								min="0"
+								oninput="changeCardMM(this.value)"
 							/>
 							<input
 								type="text"
 								class="year-card"
 								name="year-card"
 								placeholder="YY"
-								oninput="changeCardYY(this.value)"
 								min="0"
+								oninput="changeCardYY(this.value)"
 							/>
 						</section>
 					</label>
@@ -114,6 +114,7 @@
 							placeholder="e.g. 123"
 							maxlength="3"
 							min="0"
+							oninput="changeCardCvc(this.value)"
 						/>
 					</label>
 				</section>
