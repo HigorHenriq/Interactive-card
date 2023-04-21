@@ -4,7 +4,8 @@ const cardClientName = document.getElementById("card-client-name");
 
 const cardClientDigits = document.getElementById("all-cards-digits");
 
-// const cardClientDate = document.getElementById("cardClientName");
+const cardClientDateMM = document.getElementById("card-mm");
+const cardClientDateYY = document.getElementById("card-yy");
 
 // const cardClientCVC = document.getElementById("cardClientName");
 
@@ -56,6 +57,14 @@ const changeCardDigits = (event) => {
 
 		applyMaskDigits(digits);
 	}
+};
+
+const changeCardMM = (value) => {
+	cardClientDateMM.innerHTML = value;
+};
+
+const changeCardYY = (value) => {
+	cardClientDateYY.innerHTML = value;
 };
 
 /**
